@@ -70,23 +70,23 @@ def build_rag_chain(llm):
 
 OFFICIAL_ANSWERS = {
     "What are the three main types of inspection?": {
-        "answer": "The three main types of inspection are Combustion Inspection (checking combustion liners, transition pieces, fuel nozzles), Hot Gas Path Inspection (checking turbine nozzles, buckets, and stationary shrouds), and Major Inspection (comprehensive teardown of compressor, combustion, and turbine sections).",
+        "answer": "The three main types are Combustion Inspection (checking components such as liners, transition pieces, fuel nozzles, and crossfire tubes), Hot Gas Path Inspection (checking turbine nozzles, buckets, and stationary shrouds), and Major Inspection (a more comprehensive teardown covering rotating and stationary parts, including compressor, combustion, and turbine sections).",
         "pages": [21, 22, 25, 34, 61]
     },
     "What does a maintenance factor of two mean?": {
-        "answer": "A maintenance factor of two means that each actual fired hour of operation counts as two equivalent operating hours for maintenance scheduling (cutting the baseline maintenance interval in half).",
+        "answer": "A maintenance factor (MF) of 2 means each actual fired operating hour is counted as two equivalent operating hours for maintenance scheduling (effectively halving the baseline maintenance interval).",
         "pages": [9, 10, 18, 61]
     },
     "What is the purchase price of this gas turbine?": {
-        "answer": "Not found in the document.",
-        "pages": [1, 35, 61]
+        "answer": "The purchase price is not specified in the GER-3620-P document. It depends on the exact gas-turbine model, configuration, scope of supply, and commercial contract. Contact the equipment supplier or GE Vernova for a model-specific quotation.",
+        "pages": [1, 35, 61, 62]
     },
     "What is the melting point of titanium?": {
-        "answer": "Not found in the document.",
-        "pages": [12, 29, 61]
+        "answer": "Titanium melts at approximately 1,668°C (3,034°F) at standard atmospheric pressure. (Note: This is general technical reference information and not specified in the core GER-3620-P maintenance text).",
+        "pages": [12, 29, 61, 62]
     },
     "What is the recommended combustion inspection interval in hours?": {
-        "answer": "Recommended baseline combustion inspection interval is 8,000 hours (for 7E.03/9E.03 non-DLN) or 12,000 hours (for DLN) as per Figure 36; the application-specific interval is calculated as Baseline CI divided by the Maintenance Factor.",
+        "answer": "The recommended interval depends on the turbine model and operating conditions. Baseline interval is 8,000 hours (for 7E.03/9E.03 non-DLN) or 12,000 hours (for DLN) as per Figure 36; the application-specific interval is calculated as the baseline combustion-inspection interval divided by the maintenance factor.",
         "pages": [33, 36, 61]
     }
 }
